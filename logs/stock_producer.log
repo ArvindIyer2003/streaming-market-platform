@@ -1,0 +1,1497 @@
+2026-02-17 14:32:01.521 | INFO     | __main__:run_stock_producer:185 - 🚀 Starting Stock Price Producer
+2026-02-17 14:32:01.523 | INFO     | __main__:run_stock_producer:186 - 📊 Tracking 10 Indian stocks + 6 US stocks
+2026-02-17 14:32:01.523 | INFO     | __main__:run_stock_producer:187 - ⏱️ Polling every 5 seconds
+2026-02-17 14:32:01.626 | SUCCESS  | __main__:create_producer:61 - ✅ Kafka producer connected!
+2026-02-17 14:32:01.629 | INFO     | __main__:run_stock_producer:203 - 📈 Stocks: TCS.NS, INFY.NS, WIPRO.NS, TECHM.NS, HDFCBANK.NS, ICICIBANK.NS, SBIN.NS, RELIANCE.NS, ADANIENT.NS, TATAMOTORS.NS, AAPL, GOOGL, MSFT, NVDA, AMZN, META
+2026-02-17 14:32:01.632 | INFO     | __main__:run_stock_producer:204 - ────────────────────────────────────────────────────────────
+2026-02-17 14:32:01.632 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:32:01]
+2026-02-17 14:32:06.150 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.1 → partition=1 offset=0
+2026-02-17 14:32:06.150 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.10 Change: +0.13%
+2026-02-17 14:32:07.008 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.1 → partition=2 offset=1
+2026-02-17 14:32:07.009 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.10 Change: +1.54%
+2026-02-17 14:32:07.982 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.48 → partition=0 offset=0
+2026-02-17 14:32:07.982 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.48 Change: +1.07%
+2026-02-17 14:32:08.970 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.3 → partition=1 offset=1
+2026-02-17 14:32:08.970 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.30 Change: +0.57%
+2026-02-17 14:32:10.136 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.05 → partition=0 offset=1
+2026-02-17 14:32:10.137 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.05 Change: -0.05%
+2026-02-17 14:32:11.366 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.3 → partition=1 offset=2
+2026-02-17 14:32:11.366 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.30 Change: -0.45%
+2026-02-17 14:32:12.145 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1215.5 → partition=2 offset=2
+2026-02-17 14:32:12.145 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1215.50 Change: +0.50%
+2026-02-17 14:32:12.999 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.2 → partition=2 offset=3
+2026-02-17 14:32:13.000 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.20 Change: -1.02%
+2026-02-17 14:32:14.555 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.0 → partition=2 offset=4
+2026-02-17 14:32:14.555 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.00 Change: +2.40%
+2026-02-17 14:32:17.686 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:32:18.944 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=2
+2026-02-17 14:32:18.944 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:32:19.859 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=3
+2026-02-17 14:32:19.860 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:32:20.778 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=3
+2026-02-17 14:32:20.778 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:32:21.904 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=5
+2026-02-17 14:32:21.904 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:32:22.936 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=6
+2026-02-17 14:32:22.936 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:32:23.861 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=4
+2026-02-17 14:32:23.861 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:32:23.862 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:32:23.862 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:32:23.863 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:32:23]
+2026-02-17 14:32:24.584 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2719.0 → partition=1 offset=4
+2026-02-17 14:32:24.584 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2719.00 Change: +0.20%
+2026-02-17 14:32:25.203 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1392.3 → partition=2 offset=7
+2026-02-17 14:32:25.203 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1392.30 Change: +1.63%
+2026-02-17 14:32:25.839 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.56 → partition=0 offset=5
+2026-02-17 14:32:25.839 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.56 Change: +1.11%
+2026-02-17 14:32:26.678 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.7 → partition=1 offset=5
+2026-02-17 14:32:26.679 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.70 Change: +0.59%
+2026-02-17 14:32:27.348 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.2 → partition=0 offset=6
+2026-02-17 14:32:27.348 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.20 Change: -0.03%
+2026-02-17 14:32:27.854 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.2 → partition=1 offset=6
+2026-02-17 14:32:27.855 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.20 Change: -0.45%
+2026-02-17 14:32:28.368 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1215.7 → partition=2 offset=8
+2026-02-17 14:32:28.368 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1215.70 Change: +0.51%
+2026-02-17 14:32:28.995 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.4 → partition=2 offset=9
+2026-02-17 14:32:28.995 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.40 Change: -1.00%
+2026-02-17 14:32:29.734 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.0 → partition=2 offset=10
+2026-02-17 14:32:29.734 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.00 Change: +2.40%
+2026-02-17 14:32:32.332 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:32:32.983 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=7
+2026-02-17 14:32:32.983 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:32:33.592 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=7
+2026-02-17 14:32:33.593 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:32:34.106 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=8
+2026-02-17 14:32:34.107 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:32:34.628 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=11
+2026-02-17 14:32:34.629 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:32:35.137 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=12
+2026-02-17 14:32:35.137 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:32:35.734 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=9
+2026-02-17 14:32:35.734 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:32:35.735 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:32:35.736 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:32:35.736 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:32:35]
+2026-02-17 14:32:36.247 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2718.5 → partition=1 offset=8
+2026-02-17 14:32:36.248 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2718.50 Change: +0.18%
+2026-02-17 14:32:36.889 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1392.3 → partition=2 offset=13
+2026-02-17 14:32:36.889 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1392.30 Change: +1.63%
+2026-02-17 14:32:37.395 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.53 → partition=0 offset=10
+2026-02-17 14:32:37.395 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.53 Change: +1.10%
+2026-02-17 14:32:37.895 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.1 → partition=1 offset=9
+2026-02-17 14:32:37.895 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.10 Change: +0.56%
+2026-02-17 14:32:38.514 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.3 → partition=0 offset=11
+2026-02-17 14:32:38.514 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.30 Change: -0.02%
+2026-02-17 14:32:39.030 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.5 → partition=1 offset=10
+2026-02-17 14:32:39.030 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.50 Change: -0.43%
+2026-02-17 14:32:39.627 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1215.9 → partition=2 offset=14
+2026-02-17 14:32:39.627 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1215.90 Change: +0.53%
+2026-02-17 14:32:40.268 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.3 → partition=2 offset=15
+2026-02-17 14:32:40.268 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.30 Change: -1.01%
+2026-02-17 14:32:40.976 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.9 → partition=2 offset=16
+2026-02-17 14:32:40.976 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.90 Change: +2.44%
+2026-02-17 14:32:42.260 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:32:42.603 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=12
+2026-02-17 14:32:42.603 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:32:43.030 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=11
+2026-02-17 14:32:43.030 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:32:43.630 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=13
+2026-02-17 14:32:43.631 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:32:44.243 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=17
+2026-02-17 14:32:44.243 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:32:44.729 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=18
+2026-02-17 14:32:44.730 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:32:45.080 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=14
+2026-02-17 14:32:45.080 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:32:45.082 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:32:45.083 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:32:45.083 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:32:45]
+2026-02-17 14:32:45.510 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2718.5 → partition=1 offset=12
+2026-02-17 14:32:45.511 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2718.50 Change: +0.18%
+2026-02-17 14:32:45.997 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1392.3 → partition=2 offset=19
+2026-02-17 14:32:45.997 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1392.30 Change: +1.63%
+2026-02-17 14:32:46.607 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.53 → partition=0 offset=15
+2026-02-17 14:32:46.608 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.53 Change: +1.10%
+2026-02-17 14:32:47.232 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.1 → partition=1 offset=13
+2026-02-17 14:32:47.233 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.10 Change: +0.56%
+2026-02-17 14:32:47.735 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.3 → partition=0 offset=16
+2026-02-17 14:32:47.735 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.30 Change: -0.02%
+2026-02-17 14:32:48.247 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.5 → partition=1 offset=14
+2026-02-17 14:32:48.247 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.50 Change: -0.43%
+2026-02-17 14:32:48.856 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1215.9 → partition=2 offset=20
+2026-02-17 14:32:48.856 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1215.90 Change: +0.53%
+2026-02-17 14:32:49.908 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.3 → partition=2 offset=21
+2026-02-17 14:32:49.908 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.30 Change: -1.01%
+2026-02-17 14:32:50.916 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.9 → partition=2 offset=22
+2026-02-17 14:32:50.917 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.90 Change: +2.44%
+2026-02-17 14:32:52.092 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:32:52.754 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=17
+2026-02-17 14:32:52.755 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:32:53.264 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=15
+2026-02-17 14:32:53.265 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:32:53.878 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=18
+2026-02-17 14:32:53.879 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:32:54.485 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=23
+2026-02-17 14:32:54.485 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:32:55.112 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=24
+2026-02-17 14:32:55.112 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:32:55.722 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=19
+2026-02-17 14:32:55.722 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:32:55.723 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:32:55.723 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:32:55.724 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:32:55]
+2026-02-17 14:32:56.341 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2720.4 → partition=1 offset=16
+2026-02-17 14:32:56.341 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2720.40 Change: +0.25%
+2026-02-17 14:32:56.982 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1392.9 → partition=2 offset=25
+2026-02-17 14:32:56.983 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1392.90 Change: +1.67%
+2026-02-17 14:32:57.665 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.56 → partition=0 offset=20
+2026-02-17 14:32:57.666 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.56 Change: +1.11%
+2026-02-17 14:32:59.017 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.8 → partition=1 offset=17
+2026-02-17 14:32:59.017 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.80 Change: +0.54%
+2026-02-17 14:32:59.507 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.3 → partition=0 offset=21
+2026-02-17 14:32:59.508 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.30 Change: -0.02%
+2026-02-17 14:33:00.122 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.4 → partition=1 offset=18
+2026-02-17 14:33:00.123 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.40 Change: -0.44%
+2026-02-17 14:33:00.850 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1215.9 → partition=2 offset=26
+2026-02-17 14:33:00.851 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1215.90 Change: +0.53%
+2026-02-17 14:33:01.547 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.3 → partition=2 offset=27
+2026-02-17 14:33:01.547 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.30 Change: -1.01%
+2026-02-17 14:33:02.279 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.1 → partition=2 offset=28
+2026-02-17 14:33:02.280 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.10 Change: +2.40%
+2026-02-17 14:33:05.102 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:33:06.053 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=22
+2026-02-17 14:33:06.054 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:33:06.910 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=19
+2026-02-17 14:33:06.910 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:33:07.488 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=23
+2026-02-17 14:33:07.489 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:33:08.231 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=29
+2026-02-17 14:33:08.231 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:33:08.828 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=30
+2026-02-17 14:33:08.829 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:33:09.747 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=24
+2026-02-17 14:33:09.747 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:33:09.748 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:33:09.748 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:33:09.750 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:33:09]
+2026-02-17 14:33:10.174 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2719.0 → partition=1 offset=20
+2026-02-17 14:33:10.174 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2719.00 Change: +0.20%
+2026-02-17 14:33:10.705 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1392.8 → partition=2 offset=31
+2026-02-17 14:33:10.705 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1392.80 Change: +1.66%
+2026-02-17 14:33:11.599 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.55 → partition=0 offset=25
+2026-02-17 14:33:11.600 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.55 Change: +1.11%
+2026-02-17 14:33:12.104 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.6 → partition=1 offset=21
+2026-02-17 14:33:12.104 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.60 Change: +0.52%
+2026-02-17 14:33:12.729 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.5 → partition=0 offset=26
+2026-02-17 14:33:12.730 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.50 Change: +0.00%
+2026-02-17 14:33:13.834 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.2 → partition=1 offset=22
+2026-02-17 14:33:13.834 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.20 Change: -0.45%
+2026-02-17 14:33:14.785 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.2 → partition=2 offset=32
+2026-02-17 14:33:14.786 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.20 Change: +0.55%
+2026-02-17 14:33:15.906 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.1 → partition=2 offset=33
+2026-02-17 14:33:15.907 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.10 Change: -1.02%
+2026-02-17 14:33:16.524 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.1 → partition=2 offset=34
+2026-02-17 14:33:16.525 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.10 Change: +2.40%
+2026-02-17 14:33:17.997 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:33:18.865 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=27
+2026-02-17 14:33:18.865 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:33:19.378 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=23
+2026-02-17 14:33:19.378 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:33:20.298 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=28
+2026-02-17 14:33:20.298 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:33:20.970 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=35
+2026-02-17 14:33:20.970 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:33:21.622 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=36
+2026-02-17 14:33:21.622 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:33:22.238 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=29
+2026-02-17 14:33:22.238 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:33:22.239 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:33:22.240 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:33:22.240 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:33:22]
+2026-02-17 14:33:22.852 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2719.8 → partition=1 offset=24
+2026-02-17 14:33:22.852 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2719.80 Change: +0.23%
+2026-02-17 14:33:23.365 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1393.0 → partition=2 offset=37
+2026-02-17 14:33:23.366 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1393.00 Change: +1.68%
+2026-02-17 14:33:23.991 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.59 → partition=0 offset=30
+2026-02-17 14:33:23.991 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.59 Change: +1.13%
+2026-02-17 14:33:25.245 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.6 → partition=1 offset=25
+2026-02-17 14:33:25.245 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.60 Change: +0.59%
+2026-02-17 14:33:25.857 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.45 → partition=0 offset=31
+2026-02-17 14:33:25.858 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.45 Change: -0.01%
+2026-02-17 14:33:26.451 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.4 → partition=1 offset=26
+2026-02-17 14:33:26.452 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.40 Change: -0.44%
+2026-02-17 14:33:27.260 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.1 → partition=2 offset=38
+2026-02-17 14:33:27.261 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.10 Change: +0.55%
+2026-02-17 14:33:28.003 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.8 → partition=2 offset=39
+2026-02-17 14:33:28.003 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.80 Change: -0.98%
+2026-02-17 14:33:28.595 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.6 → partition=2 offset=40
+2026-02-17 14:33:28.595 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.60 Change: +2.42%
+2026-02-17 14:33:30.284 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:33:30.969 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=32
+2026-02-17 14:33:30.970 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:33:31.544 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=27
+2026-02-17 14:33:31.544 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:33:32.261 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=33
+2026-02-17 14:33:32.261 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:33:32.907 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=41
+2026-02-17 14:33:32.907 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:33:33.424 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=42
+2026-02-17 14:33:33.425 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:33:34.452 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=34
+2026-02-17 14:33:34.453 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:33:34.454 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:33:34.456 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:33:34.457 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:33:34]
+2026-02-17 14:33:35.123 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2720.0 → partition=1 offset=28
+2026-02-17 14:33:35.123 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2720.00 Change: +0.24%
+2026-02-17 14:33:35.778 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1392.8 → partition=2 offset=43
+2026-02-17 14:33:35.778 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1392.80 Change: +1.66%
+2026-02-17 14:33:36.587 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.6 → partition=0 offset=35
+2026-02-17 14:33:36.587 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.60 Change: +1.13%
+2026-02-17 14:33:37.455 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.9 → partition=1 offset=29
+2026-02-17 14:33:37.455 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.90 Change: +0.61%
+2026-02-17 14:33:38.527 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.45 → partition=0 offset=36
+2026-02-17 14:33:38.528 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.45 Change: -0.01%
+2026-02-17 14:33:39.247 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.5 → partition=1 offset=30
+2026-02-17 14:33:39.248 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.50 Change: -0.43%
+2026-02-17 14:33:40.493 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.4 → partition=2 offset=44
+2026-02-17 14:33:40.494 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.40 Change: +0.57%
+2026-02-17 14:33:41.591 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.8 → partition=2 offset=45
+2026-02-17 14:33:41.592 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.80 Change: -0.98%
+2026-02-17 14:33:42.414 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2235.8 → partition=2 offset=46
+2026-02-17 14:33:42.414 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2235.80 Change: +2.48%
+2026-02-17 14:33:44.212 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:33:44.942 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=37
+2026-02-17 14:33:44.943 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:33:45.794 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=31
+2026-02-17 14:33:45.794 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:33:46.292 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=38
+2026-02-17 14:33:46.292 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:33:47.243 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=47
+2026-02-17 14:33:47.243 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:33:47.732 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=48
+2026-02-17 14:33:47.732 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:33:48.357 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=39
+2026-02-17 14:33:48.357 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:33:48.358 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:33:48.359 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:33:48.360 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:33:48]
+2026-02-17 14:33:48.962 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2719.0 → partition=1 offset=32
+2026-02-17 14:33:48.962 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2719.00 Change: +0.20%
+2026-02-17 14:33:49.586 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1393.2 → partition=2 offset=49
+2026-02-17 14:33:49.586 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1393.20 Change: +1.69%
+2026-02-17 14:33:50.166 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.55 → partition=0 offset=40
+2026-02-17 14:33:50.167 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.55 Change: +1.11%
+2026-02-17 14:33:51.134 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.1 → partition=1 offset=33
+2026-02-17 14:33:51.134 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.10 Change: +0.56%
+2026-02-17 14:33:51.692 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.45 → partition=0 offset=41
+2026-02-17 14:33:51.692 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.45 Change: -0.01%
+2026-02-17 14:33:52.947 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.6 → partition=1 offset=34
+2026-02-17 14:33:52.947 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.60 Change: -0.42%
+2026-02-17 14:33:53.988 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.6 → partition=2 offset=50
+2026-02-17 14:33:53.989 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.60 Change: +0.59%
+2026-02-17 14:33:54.801 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.8 → partition=2 offset=51
+2026-02-17 14:33:54.802 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.80 Change: -0.98%
+2026-02-17 14:33:55.476 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.2 → partition=2 offset=52
+2026-02-17 14:33:55.476 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.20 Change: +2.41%
+2026-02-17 14:33:56.808 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:33:57.785 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=42
+2026-02-17 14:33:57.786 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:33:58.395 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=35
+2026-02-17 14:33:58.395 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:33:59.000 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=43
+2026-02-17 14:33:59.001 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:33:59.826 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=53
+2026-02-17 14:33:59.826 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:34:00.982 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=54
+2026-02-17 14:34:00.982 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:34:01.685 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=44
+2026-02-17 14:34:01.685 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:34:01.686 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:34:01.686 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:34:01.687 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:34:01]
+2026-02-17 14:34:02.277 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2719.6 → partition=1 offset=36
+2026-02-17 14:34:02.277 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2719.60 Change: +0.22%
+2026-02-17 14:34:02.790 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1393.2 → partition=2 offset=55
+2026-02-17 14:34:02.791 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1393.20 Change: +1.69%
+2026-02-17 14:34:03.413 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.5 → partition=0 offset=45
+2026-02-17 14:34:03.413 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.50 Change: +1.08%
+2026-02-17 14:34:04.029 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.5 → partition=1 offset=37
+2026-02-17 14:34:04.029 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.50 Change: +0.52%
+2026-02-17 14:34:04.643 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.4 → partition=0 offset=46
+2026-02-17 14:34:04.643 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.40 Change: -0.01%
+2026-02-17 14:34:05.356 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.7 → partition=1 offset=38
+2026-02-17 14:34:05.357 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.70 Change: -0.42%
+2026-02-17 14:34:05.968 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.5 → partition=2 offset=56
+2026-02-17 14:34:05.968 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.50 Change: +0.58%
+2026-02-17 14:34:06.491 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.6 → partition=2 offset=57
+2026-02-17 14:34:06.492 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.60 Change: -0.99%
+2026-02-17 14:34:07.375 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.3 → partition=2 offset=58
+2026-02-17 14:34:07.376 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.30 Change: +2.41%
+2026-02-17 14:34:08.789 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:34:09.857 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=47
+2026-02-17 14:34:09.858 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:34:10.487 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=39
+2026-02-17 14:34:10.487 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:34:11.092 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=48
+2026-02-17 14:34:11.092 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:34:12.021 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=59
+2026-02-17 14:34:12.022 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:34:12.622 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=60
+2026-02-17 14:34:12.623 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:34:13.554 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=49
+2026-02-17 14:34:13.554 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:34:13.555 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:34:13.556 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:34:13.557 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:34:13]
+2026-02-17 14:34:14.787 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2719.6 → partition=1 offset=40
+2026-02-17 14:34:14.787 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2719.60 Change: +0.22%
+2026-02-17 14:34:15.395 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1393.2 → partition=2 offset=61
+2026-02-17 14:34:15.395 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1393.20 Change: +1.69%
+2026-02-17 14:34:15.924 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.6 → partition=0 offset=50
+2026-02-17 14:34:15.924 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.60 Change: +1.13%
+2026-02-17 14:34:16.525 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.2 → partition=1 offset=41
+2026-02-17 14:34:16.525 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.20 Change: +0.56%
+2026-02-17 14:34:17.496 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.45 → partition=0 offset=51
+2026-02-17 14:34:17.497 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.45 Change: -0.01%
+2026-02-17 14:34:18.161 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.7 → partition=1 offset=42
+2026-02-17 14:34:18.162 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.70 Change: -0.42%
+2026-02-17 14:34:18.774 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.6 → partition=2 offset=62
+2026-02-17 14:34:18.774 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.60 Change: +0.59%
+2026-02-17 14:34:19.378 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.7 → partition=2 offset=63
+2026-02-17 14:34:19.378 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.70 Change: -0.98%
+2026-02-17 14:34:19.953 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2235.0 → partition=2 offset=64
+2026-02-17 14:34:19.953 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2235.00 Change: +2.44%
+2026-02-17 14:34:21.077 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:34:21.735 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=52
+2026-02-17 14:34:21.736 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:34:22.343 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=43
+2026-02-17 14:34:22.343 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:34:22.852 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=53
+2026-02-17 14:34:22.852 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:34:23.570 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=65
+2026-02-17 14:34:23.571 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:34:23.986 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=66
+2026-02-17 14:34:23.986 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:34:25.007 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=54
+2026-02-17 14:34:25.008 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:34:25.009 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:34:25.010 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:34:25.011 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:34:25]
+2026-02-17 14:34:25.878 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2718.8 → partition=1 offset=44
+2026-02-17 14:34:25.878 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2718.80 Change: +0.20%
+2026-02-17 14:34:26.562 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1393.2 → partition=2 offset=67
+2026-02-17 14:34:26.562 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1393.20 Change: +1.69%
+2026-02-17 14:34:27.378 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.5 → partition=0 offset=55
+2026-02-17 14:34:27.379 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.50 Change: +1.08%
+2026-02-17 14:34:27.923 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.7 → partition=1 offset=45
+2026-02-17 14:34:27.924 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.70 Change: +0.53%
+2026-02-17 14:34:28.574 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.55 → partition=0 offset=56
+2026-02-17 14:34:28.575 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.55 Change: +0.01%
+2026-02-17 14:34:29.126 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.3 → partition=1 offset=46
+2026-02-17 14:34:29.126 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.30 Change: -0.45%
+2026-02-17 14:34:29.774 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.4 → partition=2 offset=68
+2026-02-17 14:34:29.774 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.40 Change: +0.57%
+2026-02-17 14:34:30.302 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.4 → partition=2 offset=69
+2026-02-17 14:34:30.302 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.40 Change: -1.00%
+2026-02-17 14:34:30.930 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.3 → partition=2 offset=70
+2026-02-17 14:34:30.930 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.30 Change: +2.41%
+2026-02-17 14:34:31.886 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:34:32.521 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=57
+2026-02-17 14:34:32.522 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:34:33.632 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=47
+2026-02-17 14:34:33.632 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:34:34.151 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=58
+2026-02-17 14:34:34.151 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:34:34.750 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=71
+2026-02-17 14:34:34.750 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:34:35.370 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=72
+2026-02-17 14:34:35.371 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:34:36.019 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=59
+2026-02-17 14:34:36.019 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:34:36.021 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:34:36.022 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:34:36.028 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:34:36]
+2026-02-17 14:34:37.474 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.1 → partition=1 offset=48
+2026-02-17 14:34:37.474 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.10 Change: +0.13%
+2026-02-17 14:34:38.391 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1393.5 → partition=2 offset=73
+2026-02-17 14:34:38.391 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1393.50 Change: +1.72%
+2026-02-17 14:34:39.250 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.49 → partition=0 offset=60
+2026-02-17 14:34:39.250 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.49 Change: +1.08%
+2026-02-17 14:34:39.884 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.6 → partition=1 offset=49
+2026-02-17 14:34:39.885 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.60 Change: +0.52%
+2026-02-17 14:34:41.502 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.5 → partition=0 offset=61
+2026-02-17 14:34:41.503 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.50 Change: +0.00%
+2026-02-17 14:34:42.261 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.6 → partition=1 offset=50
+2026-02-17 14:34:42.261 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.60 Change: -0.42%
+2026-02-17 14:34:43.075 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.8 → partition=2 offset=74
+2026-02-17 14:34:43.075 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.80 Change: +0.60%
+2026-02-17 14:34:44.005 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.3 → partition=2 offset=75
+2026-02-17 14:34:44.005 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.30 Change: -1.01%
+2026-02-17 14:34:44.828 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.1 → partition=2 offset=76
+2026-02-17 14:34:44.829 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.10 Change: +2.40%
+2026-02-17 14:34:46.168 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:34:47.108 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=62
+2026-02-17 14:34:47.108 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:34:48.290 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=51
+2026-02-17 14:34:48.291 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:34:49.080 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=63
+2026-02-17 14:34:49.081 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:34:50.219 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=77
+2026-02-17 14:34:50.219 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:34:50.882 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=78
+2026-02-17 14:34:50.882 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:34:51.687 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=64
+2026-02-17 14:34:51.688 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:34:51.691 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:34:51.693 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:34:51.701 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:34:51]
+2026-02-17 14:34:52.491 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.1 → partition=1 offset=52
+2026-02-17 14:34:52.492 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.10 Change: +0.13%
+2026-02-17 14:34:53.201 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1393.3 → partition=2 offset=79
+2026-02-17 14:34:53.202 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1393.30 Change: +1.70%
+2026-02-17 14:34:53.811 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.54 → partition=0 offset=65
+2026-02-17 14:34:53.811 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.54 Change: +1.10%
+2026-02-17 14:34:54.322 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.4 → partition=1 offset=53
+2026-02-17 14:34:54.322 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.40 Change: +0.51%
+2026-02-17 14:34:54.820 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.6 → partition=0 offset=66
+2026-02-17 14:34:54.820 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.60 Change: +0.01%
+2026-02-17 14:34:55.390 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.8 → partition=1 offset=54
+2026-02-17 14:34:55.390 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.80 Change: -0.41%
+2026-02-17 14:34:56.059 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.8 → partition=2 offset=80
+2026-02-17 14:34:56.059 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.80 Change: +0.60%
+2026-02-17 14:34:56.754 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.6 → partition=2 offset=81
+2026-02-17 14:34:56.754 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.60 Change: -0.99%
+2026-02-17 14:34:57.478 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.8 → partition=2 offset=82
+2026-02-17 14:34:57.478 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.80 Change: +2.43%
+2026-02-17 14:34:59.270 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:34:59.956 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=67
+2026-02-17 14:34:59.956 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:35:00.652 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=55
+2026-02-17 14:35:00.652 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:35:01.367 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=68
+2026-02-17 14:35:01.367 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:35:02.291 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=83
+2026-02-17 14:35:02.291 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:35:02.910 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=84
+2026-02-17 14:35:02.911 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:35:03.505 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=69
+2026-02-17 14:35:03.506 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:35:03.507 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:35:03.507 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:35:03.508 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:35:03]
+2026-02-17 14:35:04.476 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.1 → partition=1 offset=56
+2026-02-17 14:35:04.477 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.10 Change: +0.13%
+2026-02-17 14:35:05.052 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1393.3 → partition=2 offset=85
+2026-02-17 14:35:05.052 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1393.30 Change: +1.70%
+2026-02-17 14:35:05.765 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.53 → partition=0 offset=70
+2026-02-17 14:35:05.766 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.53 Change: +1.10%
+2026-02-17 14:35:06.287 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.5 → partition=1 offset=57
+2026-02-17 14:35:06.288 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.50 Change: +0.52%
+2026-02-17 14:35:07.000 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.65 → partition=0 offset=71
+2026-02-17 14:35:07.003 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.65 Change: +0.02%
+2026-02-17 14:35:07.509 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.0 → partition=1 offset=58
+2026-02-17 14:35:07.509 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.00 Change: -0.40%
+2026-02-17 14:35:08.022 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.9 → partition=2 offset=86
+2026-02-17 14:35:08.023 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.90 Change: +0.61%
+2026-02-17 14:35:08.583 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.9 → partition=2 offset=87
+2026-02-17 14:35:08.585 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.90 Change: -0.97%
+2026-02-17 14:35:09.256 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.1 → partition=2 offset=88
+2026-02-17 14:35:09.257 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.10 Change: +2.40%
+2026-02-17 14:35:11.050 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:35:11.807 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=72
+2026-02-17 14:35:11.808 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:35:12.361 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=59
+2026-02-17 14:35:12.361 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:35:13.038 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=73
+2026-02-17 14:35:13.038 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:35:13.648 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=89
+2026-02-17 14:35:13.648 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:35:14.156 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=90
+2026-02-17 14:35:14.156 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:35:14.682 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=74
+2026-02-17 14:35:14.682 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:35:14.683 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:35:14.684 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:35:14.685 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:35:14]
+2026-02-17 14:35:15.287 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.0 → partition=1 offset=60
+2026-02-17 14:35:15.288 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.00 Change: +0.13%
+2026-02-17 14:35:16.317 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1392.4 → partition=2 offset=91
+2026-02-17 14:35:16.317 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1392.40 Change: +1.64%
+2026-02-17 14:35:16.940 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.53 → partition=0 offset=75
+2026-02-17 14:35:16.940 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.53 Change: +1.10%
+2026-02-17 14:35:17.554 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.8 → partition=1 offset=61
+2026-02-17 14:35:17.554 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.80 Change: +0.54%
+2026-02-17 14:35:18.057 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=925.55 → partition=0 offset=76
+2026-02-17 14:35:18.058 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     925.55 Change: +0.01%
+2026-02-17 14:35:18.658 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.9 → partition=1 offset=62
+2026-02-17 14:35:18.659 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.90 Change: -0.40%
+2026-02-17 14:35:19.300 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1216.9 → partition=2 offset=92
+2026-02-17 14:35:19.301 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1216.90 Change: +0.61%
+2026-02-17 14:35:19.933 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.5 → partition=2 offset=93
+2026-02-17 14:35:19.934 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.50 Change: -1.00%
+2026-02-17 14:35:21.239 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2232.4 → partition=2 offset=94
+2026-02-17 14:35:21.239 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2232.40 Change: +2.32%
+2026-02-17 14:35:22.722 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:35:23.488 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=77
+2026-02-17 14:35:23.489 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:35:23.998 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=63
+2026-02-17 14:35:23.998 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:35:24.512 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=78
+2026-02-17 14:35:24.512 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:35:25.438 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=95
+2026-02-17 14:35:25.439 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:35:26.037 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=96
+2026-02-17 14:35:26.037 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:35:26.764 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=79
+2026-02-17 14:35:26.764 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:35:26.765 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:35:26.766 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:35:26.768 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:35:26]
+2026-02-17 14:35:27.488 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.6 → partition=1 offset=64
+2026-02-17 14:35:27.488 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.60 Change: +0.08%
+2026-02-17 14:35:27.992 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.2 → partition=2 offset=97
+2026-02-17 14:35:27.993 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.20 Change: +1.55%
+2026-02-17 14:35:28.603 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.49 → partition=0 offset=80
+2026-02-17 14:35:28.603 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.49 Change: +1.08%
+2026-02-17 14:35:29.219 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.2 → partition=1 offset=65
+2026-02-17 14:35:29.220 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.20 Change: +0.50%
+2026-02-17 14:35:29.834 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.15 → partition=0 offset=81
+2026-02-17 14:35:29.834 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.15 Change: +0.07%
+2026-02-17 14:35:30.458 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.9 → partition=1 offset=66
+2026-02-17 14:35:30.459 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.90 Change: -0.40%
+2026-02-17 14:35:30.967 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.1 → partition=2 offset=98
+2026-02-17 14:35:30.967 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.10 Change: +0.63%
+2026-02-17 14:35:31.487 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.3 → partition=2 offset=99
+2026-02-17 14:35:31.487 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.30 Change: -1.01%
+2026-02-17 14:35:32.088 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2232.5 → partition=2 offset=100
+2026-02-17 14:35:32.088 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2232.50 Change: +2.33%
+2026-02-17 14:35:33.779 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:35:34.239 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=82
+2026-02-17 14:35:34.239 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:35:34.768 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=67
+2026-02-17 14:35:34.769 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:35:35.489 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=83
+2026-02-17 14:35:35.489 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:35:35.981 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=101
+2026-02-17 14:35:35.981 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:35:36.786 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=102
+2026-02-17 14:35:36.787 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:35:37.303 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=84
+2026-02-17 14:35:37.303 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:35:37.304 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:35:37.305 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:35:37.305 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:35:37]
+2026-02-17 14:35:37.822 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2716.0 → partition=1 offset=68
+2026-02-17 14:35:37.823 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2716.00 Change: +0.09%
+2026-02-17 14:35:38.538 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.2 → partition=2 offset=103
+2026-02-17 14:35:38.538 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.20 Change: +1.55%
+2026-02-17 14:35:39.217 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.46 → partition=0 offset=85
+2026-02-17 14:35:39.217 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.46 Change: +1.06%
+2026-02-17 14:35:39.779 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.2 → partition=1 offset=69
+2026-02-17 14:35:39.779 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.20 Change: +0.50%
+2026-02-17 14:35:40.483 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.15 → partition=0 offset=86
+2026-02-17 14:35:40.484 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.15 Change: +0.07%
+2026-02-17 14:35:41.199 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.6 → partition=1 offset=70
+2026-02-17 14:35:41.199 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.60 Change: -0.42%
+2026-02-17 14:35:41.780 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.1 → partition=2 offset=104
+2026-02-17 14:35:41.780 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.10 Change: +0.63%
+2026-02-17 14:35:42.446 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.6 → partition=2 offset=105
+2026-02-17 14:35:42.446 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.60 Change: -0.99%
+2026-02-17 14:35:42.936 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2230.7 → partition=2 offset=106
+2026-02-17 14:35:42.937 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2230.70 Change: +2.25%
+2026-02-17 14:35:44.329 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:35:45.314 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=87
+2026-02-17 14:35:45.314 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:35:46.298 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=71
+2026-02-17 14:35:46.298 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:35:46.950 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=88
+2026-02-17 14:35:46.951 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:35:47.795 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=107
+2026-02-17 14:35:47.796 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:35:48.387 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=108
+2026-02-17 14:35:48.388 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:35:48.904 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=89
+2026-02-17 14:35:48.905 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:35:48.906 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:35:48.907 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:35:48.908 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:35:48]
+2026-02-17 14:35:49.517 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.0 → partition=1 offset=72
+2026-02-17 14:35:49.518 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.00 Change: +0.06%
+2026-02-17 14:35:50.267 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.4 → partition=2 offset=109
+2026-02-17 14:35:50.268 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.40 Change: +1.56%
+2026-02-17 14:35:50.939 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.5 → partition=0 offset=90
+2026-02-17 14:35:50.939 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.50 Change: +1.08%
+2026-02-17 14:35:51.633 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.4 → partition=1 offset=73
+2026-02-17 14:35:51.635 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.40 Change: +0.51%
+2026-02-17 14:35:52.365 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.05 → partition=0 offset=91
+2026-02-17 14:35:52.365 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.05 Change: +0.06%
+2026-02-17 14:35:52.916 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.6 → partition=1 offset=74
+2026-02-17 14:35:52.916 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.60 Change: -0.42%
+2026-02-17 14:35:53.519 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.3 → partition=2 offset=110
+2026-02-17 14:35:53.519 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.30 Change: +0.64%
+2026-02-17 14:35:54.038 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.5 → partition=2 offset=111
+2026-02-17 14:35:54.038 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.50 Change: -1.00%
+2026-02-17 14:35:54.629 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2230.6 → partition=2 offset=112
+2026-02-17 14:35:54.629 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2230.60 Change: +2.24%
+2026-02-17 14:35:56.107 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:35:56.962 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=92
+2026-02-17 14:35:56.962 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:35:57.756 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=75
+2026-02-17 14:35:57.756 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:35:58.416 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=93
+2026-02-17 14:35:58.416 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:35:59.077 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=113
+2026-02-17 14:35:59.077 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:35:59.735 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=114
+2026-02-17 14:35:59.735 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:36:00.567 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=94
+2026-02-17 14:36:00.568 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:36:00.571 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:36:00.572 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:36:00.573 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:36:00]
+2026-02-17 14:36:01.023 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.0 → partition=1 offset=76
+2026-02-17 14:36:01.023 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.00 Change: +0.06%
+2026-02-17 14:36:01.681 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.5 → partition=2 offset=115
+2026-02-17 14:36:01.682 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.50 Change: +1.57%
+2026-02-17 14:36:02.301 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.51 → partition=0 offset=95
+2026-02-17 14:36:02.301 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.51 Change: +1.09%
+2026-02-17 14:36:02.917 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.7 → partition=1 offset=77
+2026-02-17 14:36:02.918 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.70 Change: +0.53%
+2026-02-17 14:36:03.630 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.15 → partition=0 offset=96
+2026-02-17 14:36:03.630 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.15 Change: +0.07%
+2026-02-17 14:36:04.234 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.4 → partition=1 offset=78
+2026-02-17 14:36:04.234 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.40 Change: -0.44%
+2026-02-17 14:36:04.849 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.2 → partition=2 offset=116
+2026-02-17 14:36:04.850 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.20 Change: +0.64%
+2026-02-17 14:36:05.566 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.6 → partition=2 offset=117
+2026-02-17 14:36:05.566 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.60 Change: -0.99%
+2026-02-17 14:36:06.230 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2230.8 → partition=2 offset=118
+2026-02-17 14:36:06.230 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2230.80 Change: +2.25%
+2026-02-17 14:36:07.879 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:36:08.631 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=97
+2026-02-17 14:36:08.631 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:36:09.210 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=79
+2026-02-17 14:36:09.211 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:36:09.865 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=98
+2026-02-17 14:36:09.865 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:36:10.961 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=119
+2026-02-17 14:36:10.961 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:36:11.507 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=120
+2026-02-17 14:36:11.507 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:36:12.136 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=99
+2026-02-17 14:36:12.136 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:36:12.138 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:36:12.139 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:36:12.141 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:36:12]
+2026-02-17 14:36:12.851 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.4 → partition=1 offset=80
+2026-02-17 14:36:12.851 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.40 Change: +0.07%
+2026-02-17 14:36:13.443 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.4 → partition=2 offset=121
+2026-02-17 14:36:13.443 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.40 Change: +1.56%
+2026-02-17 14:36:14.072 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.6 → partition=0 offset=100
+2026-02-17 14:36:14.072 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.60 Change: +1.13%
+2026-02-17 14:36:15.095 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.6 → partition=1 offset=81
+2026-02-17 14:36:15.095 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.60 Change: +0.52%
+2026-02-17 14:36:15.832 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.35 → partition=0 offset=101
+2026-02-17 14:36:15.832 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.35 Change: +0.09%
+2026-02-17 14:36:17.541 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.8 → partition=1 offset=82
+2026-02-17 14:36:17.541 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.80 Change: -0.41%
+2026-02-17 14:36:18.164 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.5 → partition=2 offset=122
+2026-02-17 14:36:18.164 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.50 Change: +0.66%
+2026-02-17 14:36:19.211 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.3 → partition=2 offset=123
+2026-02-17 14:36:19.211 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.30 Change: -1.01%
+2026-02-17 14:36:19.905 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2232.0 → partition=2 offset=124
+2026-02-17 14:36:19.906 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2232.00 Change: +2.31%
+2026-02-17 14:36:21.350 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:36:22.166 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=102
+2026-02-17 14:36:22.167 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:36:22.783 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=83
+2026-02-17 14:36:22.784 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:36:23.594 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=103
+2026-02-17 14:36:23.594 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:36:24.327 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=125
+2026-02-17 14:36:24.327 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:36:25.236 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=126
+2026-02-17 14:36:25.237 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:36:25.859 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=104
+2026-02-17 14:36:25.859 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:36:25.860 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:36:25.861 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:36:25.862 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:36:25]
+2026-02-17 14:36:26.864 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.0 → partition=1 offset=84
+2026-02-17 14:36:26.864 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.00 Change: +0.13%
+2026-02-17 14:36:27.485 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.2 → partition=2 offset=127
+2026-02-17 14:36:27.485 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.20 Change: +1.55%
+2026-02-17 14:36:28.106 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.6 → partition=0 offset=105
+2026-02-17 14:36:28.107 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.60 Change: +1.13%
+2026-02-17 14:36:28.707 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.1 → partition=1 offset=85
+2026-02-17 14:36:28.707 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.10 Change: +0.49%
+2026-02-17 14:36:29.253 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.2 → partition=0 offset=106
+2026-02-17 14:36:29.253 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.20 Change: +0.08%
+2026-02-17 14:36:29.736 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.3 → partition=1 offset=86
+2026-02-17 14:36:29.737 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.30 Change: -0.45%
+2026-02-17 14:36:30.348 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.1 → partition=2 offset=128
+2026-02-17 14:36:30.349 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.10 Change: +0.63%
+2026-02-17 14:36:30.875 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.2 → partition=2 offset=129
+2026-02-17 14:36:30.876 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.20 Change: -1.02%
+2026-02-17 14:36:31.335 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2231.5 → partition=2 offset=130
+2026-02-17 14:36:31.336 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2231.50 Change: +2.28%
+2026-02-17 14:36:33.176 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:36:33.748 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=107
+2026-02-17 14:36:33.749 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:36:34.341 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=87
+2026-02-17 14:36:34.342 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:36:34.955 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=108
+2026-02-17 14:36:34.955 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:36:35.471 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=131
+2026-02-17 14:36:35.471 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:36:36.589 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=132
+2026-02-17 14:36:36.589 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:36:37.360 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=109
+2026-02-17 14:36:37.360 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:36:37.362 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:36:37.363 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:36:37.364 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:36:37]
+2026-02-17 14:36:38.032 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.8 → partition=1 offset=88
+2026-02-17 14:36:38.033 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.80 Change: +0.08%
+2026-02-17 14:36:38.647 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.3 → partition=2 offset=133
+2026-02-17 14:36:38.647 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.30 Change: +1.55%
+2026-02-17 14:36:41.106 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.56 → partition=0 offset=110
+2026-02-17 14:36:41.107 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.56 Change: +1.11%
+2026-02-17 14:36:41.973 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.4 → partition=1 offset=89
+2026-02-17 14:36:41.973 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.40 Change: +0.51%
+2026-02-17 14:36:43.163 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.15 → partition=0 offset=111
+2026-02-17 14:36:43.164 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.15 Change: +0.07%
+2026-02-17 14:36:44.163 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.5 → partition=1 offset=90
+2026-02-17 14:36:44.163 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.50 Change: -0.43%
+2026-02-17 14:36:44.881 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.5 → partition=2 offset=134
+2026-02-17 14:36:44.881 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.50 Change: +0.66%
+2026-02-17 14:36:45.513 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.7 → partition=2 offset=135
+2026-02-17 14:36:45.513 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.70 Change: -0.98%
+2026-02-17 14:36:46.049 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2231.5 → partition=2 offset=136
+2026-02-17 14:36:46.050 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2231.50 Change: +2.28%
+2026-02-17 14:36:47.263 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:36:47.747 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=112
+2026-02-17 14:36:47.747 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:36:48.671 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=91
+2026-02-17 14:36:48.671 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:36:49.173 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=113
+2026-02-17 14:36:49.174 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:36:49.809 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=137
+2026-02-17 14:36:49.809 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:36:50.508 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=138
+2026-02-17 14:36:50.508 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:36:51.349 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=114
+2026-02-17 14:36:51.350 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:36:51.351 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:36:51.352 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:36:51.353 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:36:51]
+2026-02-17 14:36:51.941 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2716.2 → partition=1 offset=92
+2026-02-17 14:36:51.941 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2716.20 Change: +0.10%
+2026-02-17 14:36:52.675 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.1 → partition=2 offset=139
+2026-02-17 14:36:52.675 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.10 Change: +1.54%
+2026-02-17 14:36:53.282 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.65 → partition=0 offset=115
+2026-02-17 14:36:53.282 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.65 Change: +1.15%
+2026-02-17 14:36:54.065 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.9 → partition=1 offset=93
+2026-02-17 14:36:54.066 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.90 Change: +0.54%
+2026-02-17 14:36:54.610 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.2 → partition=0 offset=116
+2026-02-17 14:36:54.611 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.20 Change: +0.08%
+2026-02-17 14:36:55.230 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.6 → partition=1 offset=94
+2026-02-17 14:36:55.231 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.60 Change: -0.42%
+2026-02-17 14:36:55.843 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.5 → partition=2 offset=140
+2026-02-17 14:36:55.843 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.50 Change: +0.66%
+2026-02-17 14:36:56.356 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.6 → partition=2 offset=141
+2026-02-17 14:36:56.356 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.60 Change: -0.99%
+2026-02-17 14:36:57.075 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2233.0 → partition=2 offset=142
+2026-02-17 14:36:57.075 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2233.00 Change: +2.35%
+2026-02-17 14:36:58.567 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:36:59.225 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=117
+2026-02-17 14:36:59.225 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:36:59.846 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=95
+2026-02-17 14:36:59.847 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:37:00.464 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=118
+2026-02-17 14:37:00.465 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:37:01.058 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=143
+2026-02-17 14:37:01.058 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:37:01.793 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=144
+2026-02-17 14:37:01.793 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:37:02.598 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=119
+2026-02-17 14:37:02.599 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:37:02.600 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:37:02.601 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:37:02.601 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:37:02]
+2026-02-17 14:37:03.316 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.4 → partition=1 offset=96
+2026-02-17 14:37:03.316 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.40 Change: +0.14%
+2026-02-17 14:37:04.640 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.7 → partition=2 offset=145
+2026-02-17 14:37:04.640 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.70 Change: +1.58%
+2026-02-17 14:37:05.157 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.76 → partition=0 offset=120
+2026-02-17 14:37:05.158 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.76 Change: +1.21%
+2026-02-17 14:37:05.666 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.6 → partition=1 offset=97
+2026-02-17 14:37:05.666 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.60 Change: +0.59%
+2026-02-17 14:37:06.310 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.5 → partition=0 offset=121
+2026-02-17 14:37:06.311 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.50 Change: +0.11%
+2026-02-17 14:37:07.429 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.5 → partition=1 offset=98
+2026-02-17 14:37:07.430 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.50 Change: -0.43%
+2026-02-17 14:37:07.925 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.5 → partition=2 offset=146
+2026-02-17 14:37:07.925 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.50 Change: +0.66%
+2026-02-17 14:37:08.350 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.8 → partition=2 offset=147
+2026-02-17 14:37:08.350 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.80 Change: -0.98%
+2026-02-17 14:37:08.946 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2232.5 → partition=2 offset=148
+2026-02-17 14:37:08.947 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2232.50 Change: +2.33%
+2026-02-17 14:37:10.244 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:37:10.802 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=122
+2026-02-17 14:37:10.802 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:37:11.341 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=99
+2026-02-17 14:37:11.341 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:37:11.810 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=123
+2026-02-17 14:37:11.811 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:37:12.533 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=149
+2026-02-17 14:37:12.533 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:37:13.159 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=150
+2026-02-17 14:37:13.159 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:37:13.781 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=124
+2026-02-17 14:37:13.782 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:37:13.783 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:37:13.784 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:37:13.784 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:37:13]
+2026-02-17 14:37:14.287 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2716.4 → partition=1 offset=100
+2026-02-17 14:37:14.287 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2716.40 Change: +0.11%
+2026-02-17 14:37:14.888 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.0 → partition=2 offset=151
+2026-02-17 14:37:14.888 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.00 Change: +1.53%
+2026-02-17 14:37:15.512 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.76 → partition=0 offset=125
+2026-02-17 14:37:15.512 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.76 Change: +1.21%
+2026-02-17 14:37:16.037 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.5 → partition=1 offset=101
+2026-02-17 14:37:16.037 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.50 Change: +0.58%
+2026-02-17 14:37:16.526 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.45 → partition=0 offset=126
+2026-02-17 14:37:16.527 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.45 Change: +0.10%
+2026-02-17 14:37:17.051 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.2 → partition=1 offset=102
+2026-02-17 14:37:17.052 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.20 Change: -0.45%
+2026-02-17 14:37:17.446 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.6 → partition=2 offset=152
+2026-02-17 14:37:17.447 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.60 Change: +0.67%
+2026-02-17 14:37:17.969 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.1 → partition=2 offset=153
+2026-02-17 14:37:17.969 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.10 Change: -0.95%
+2026-02-17 14:37:18.378 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2232.5 → partition=2 offset=154
+2026-02-17 14:37:18.379 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2232.50 Change: +2.33%
+2026-02-17 14:37:19.560 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:37:20.017 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=127
+2026-02-17 14:37:20.017 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:37:20.623 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=103
+2026-02-17 14:37:20.624 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:37:21.126 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=128
+2026-02-17 14:37:21.126 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:37:21.549 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=155
+2026-02-17 14:37:21.549 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:37:22.052 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=156
+2026-02-17 14:37:22.053 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:37:22.585 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=129
+2026-02-17 14:37:22.585 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:37:22.587 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:37:22.588 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:37:22.589 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:37:22]
+2026-02-17 14:37:23.081 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2716.4 → partition=1 offset=104
+2026-02-17 14:37:23.081 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2716.40 Change: +0.11%
+2026-02-17 14:37:23.599 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.0 → partition=2 offset=157
+2026-02-17 14:37:23.600 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.00 Change: +1.53%
+2026-02-17 14:37:24.212 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.54 → partition=0 offset=130
+2026-02-17 14:37:24.212 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.54 Change: +1.10%
+2026-02-17 14:37:24.721 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.5 → partition=1 offset=105
+2026-02-17 14:37:24.721 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.50 Change: +0.58%
+2026-02-17 14:37:25.247 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.45 → partition=0 offset=131
+2026-02-17 14:37:25.247 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.45 Change: +0.10%
+2026-02-17 14:37:25.739 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.2 → partition=1 offset=106
+2026-02-17 14:37:25.739 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.20 Change: -0.45%
+2026-02-17 14:37:26.359 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.6 → partition=2 offset=158
+2026-02-17 14:37:26.360 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.60 Change: +0.67%
+2026-02-17 14:37:26.889 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.1 → partition=2 offset=159
+2026-02-17 14:37:26.890 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.10 Change: -0.95%
+2026-02-17 14:37:27.581 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2233.2 → partition=2 offset=160
+2026-02-17 14:37:27.582 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2233.20 Change: +2.36%
+2026-02-17 14:37:28.981 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:37:29.538 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=132
+2026-02-17 14:37:29.539 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:37:30.673 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=107
+2026-02-17 14:37:30.673 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:37:31.309 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=133
+2026-02-17 14:37:31.309 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:37:32.010 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=161
+2026-02-17 14:37:32.011 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:37:32.715 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=162
+2026-02-17 14:37:32.715 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:37:33.522 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=134
+2026-02-17 14:37:33.522 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:37:33.523 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:37:33.524 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:37:33.525 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:37:33]
+2026-02-17 14:37:34.113 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.6 → partition=1 offset=108
+2026-02-17 14:37:34.113 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.60 Change: +0.08%
+2026-02-17 14:37:34.592 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1390.5 → partition=2 offset=163
+2026-02-17 14:37:34.593 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1390.50 Change: +1.50%
+2026-02-17 14:37:35.271 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.58 → partition=0 offset=135
+2026-02-17 14:37:35.271 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.58 Change: +1.12%
+2026-02-17 14:37:36.139 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.2 → partition=1 offset=109
+2026-02-17 14:37:36.139 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.20 Change: +0.56%
+2026-02-17 14:37:36.603 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.45 → partition=0 offset=136
+2026-02-17 14:37:36.604 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.45 Change: +0.10%
+2026-02-17 14:37:37.221 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1405.9 → partition=1 offset=110
+2026-02-17 14:37:37.222 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1405.90 Change: -0.40%
+2026-02-17 14:37:37.732 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.8 → partition=2 offset=164
+2026-02-17 14:37:37.732 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.80 Change: +0.69%
+2026-02-17 14:37:38.337 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.0 → partition=2 offset=165
+2026-02-17 14:37:38.337 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.00 Change: -0.96%
+2026-02-17 14:37:39.365 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2233.7 → partition=2 offset=166
+2026-02-17 14:37:39.365 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2233.70 Change: +2.38%
+2026-02-17 14:37:40.766 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:37:41.315 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=137
+2026-02-17 14:37:41.316 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:37:41.823 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=111
+2026-02-17 14:37:41.823 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:37:42.355 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=138
+2026-02-17 14:37:42.356 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:37:43.162 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=167
+2026-02-17 14:37:43.163 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:37:43.858 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=168
+2026-02-17 14:37:43.858 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:37:44.785 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=139
+2026-02-17 14:37:44.785 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:37:44.786 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:37:44.787 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:37:44.787 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:37:44]
+2026-02-17 14:37:45.505 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.2 → partition=1 offset=112
+2026-02-17 14:37:45.505 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.20 Change: +0.06%
+2026-02-17 14:37:46.130 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1390.0 → partition=2 offset=169
+2026-02-17 14:37:46.131 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1390.00 Change: +1.46%
+2026-02-17 14:37:46.748 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.54 → partition=0 offset=140
+2026-02-17 14:37:46.748 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.54 Change: +1.10%
+2026-02-17 14:37:47.461 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.0 → partition=1 offset=113
+2026-02-17 14:37:47.462 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.00 Change: +0.55%
+2026-02-17 14:37:48.174 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.25 → partition=0 offset=141
+2026-02-17 14:37:48.174 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.25 Change: +0.08%
+2026-02-17 14:37:48.783 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.1 → partition=1 offset=114
+2026-02-17 14:37:48.783 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.10 Change: -0.39%
+2026-02-17 14:37:49.411 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.8 → partition=2 offset=170
+2026-02-17 14:37:49.411 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.80 Change: +0.69%
+2026-02-17 14:37:50.015 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.2 → partition=2 offset=171
+2026-02-17 14:37:50.015 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.20 Change: -0.95%
+2026-02-17 14:37:50.552 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.7 → partition=2 offset=172
+2026-02-17 14:37:50.552 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.70 Change: +2.43%
+2026-02-17 14:37:52.428 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:37:53.090 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=142
+2026-02-17 14:37:53.091 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:37:53.662 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=115
+2026-02-17 14:37:53.662 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:37:54.115 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=143
+2026-02-17 14:37:54.116 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:37:54.715 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=173
+2026-02-17 14:37:54.715 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:37:55.339 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=174
+2026-02-17 14:37:55.340 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:37:55.847 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=144
+2026-02-17 14:37:55.847 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:37:55.848 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:37:55.848 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:37:55.849 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:37:55]
+2026-02-17 14:37:56.462 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2713.6 → partition=1 offset=116
+2026-02-17 14:37:56.462 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2713.60 Change: +0.00%
+2026-02-17 14:37:56.982 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1389.3 → partition=2 offset=175
+2026-02-17 14:37:56.982 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1389.30 Change: +1.41%
+2026-02-17 14:37:57.584 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.56 → partition=0 offset=145
+2026-02-17 14:37:57.584 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.56 Change: +1.11%
+2026-02-17 14:37:58.197 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1520.8 → partition=1 offset=117
+2026-02-17 14:37:58.198 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1520.80 Change: +0.54%
+2026-02-17 14:37:58.705 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.2 → partition=0 offset=146
+2026-02-17 14:37:58.705 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.20 Change: +0.08%
+2026-02-17 14:37:59.336 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.2 → partition=1 offset=118
+2026-02-17 14:37:59.336 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.20 Change: -0.38%
+2026-02-17 14:37:59.843 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.0 → partition=2 offset=176
+2026-02-17 14:37:59.844 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.00 Change: +0.70%
+2026-02-17 14:38:00.718 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.2 → partition=2 offset=177
+2026-02-17 14:38:00.718 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.20 Change: -0.95%
+2026-02-17 14:38:01.271 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2234.9 → partition=2 offset=178
+2026-02-17 14:38:01.271 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2234.90 Change: +2.44%
+2026-02-17 14:38:02.672 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:38:03.018 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=147
+2026-02-17 14:38:03.018 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:38:03.629 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=119
+2026-02-17 14:38:03.629 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:38:04.027 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=148
+2026-02-17 14:38:04.028 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:38:05.378 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=179
+2026-02-17 14:38:05.378 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:38:06.089 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=180
+2026-02-17 14:38:06.089 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:38:06.623 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=149
+2026-02-17 14:38:06.624 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:38:06.625 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:38:06.625 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:38:06.625 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:38:06]
+2026-02-17 14:38:07.602 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.6 → partition=1 offset=120
+2026-02-17 14:38:07.602 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.60 Change: +0.08%
+2026-02-17 14:38:08.274 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1390.0 → partition=2 offset=181
+2026-02-17 14:38:08.274 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1390.00 Change: +1.46%
+2026-02-17 14:38:08.993 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.57 → partition=0 offset=150
+2026-02-17 14:38:08.994 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.57 Change: +1.12%
+2026-02-17 14:38:09.794 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.4 → partition=1 offset=121
+2026-02-17 14:38:09.794 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.40 Change: +0.58%
+2026-02-17 14:38:10.525 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.35 → partition=0 offset=151
+2026-02-17 14:38:10.526 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.35 Change: +0.09%
+2026-02-17 14:38:11.229 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.2 → partition=1 offset=122
+2026-02-17 14:38:11.230 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.20 Change: -0.38%
+2026-02-17 14:38:11.879 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.0 → partition=2 offset=182
+2026-02-17 14:38:11.880 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.00 Change: +0.70%
+2026-02-17 14:38:12.658 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.2 → partition=2 offset=183
+2026-02-17 14:38:12.658 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.20 Change: -0.95%
+2026-02-17 14:38:13.268 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2236.0 → partition=2 offset=184
+2026-02-17 14:38:13.269 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2236.00 Change: +2.49%
+2026-02-17 14:38:14.610 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:38:15.317 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=152
+2026-02-17 14:38:15.317 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:38:16.016 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=123
+2026-02-17 14:38:16.017 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:38:16.772 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=153
+2026-02-17 14:38:16.773 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:38:17.593 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=185
+2026-02-17 14:38:17.594 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:38:18.540 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=186
+2026-02-17 14:38:18.541 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:38:19.316 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=154
+2026-02-17 14:38:19.316 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:38:19.317 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:38:19.318 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:38:19.319 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:38:19]
+2026-02-17 14:38:20.027 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2714.3 → partition=1 offset=124
+2026-02-17 14:38:20.028 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2714.30 Change: +0.03%
+2026-02-17 14:38:21.082 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1389.3 → partition=2 offset=187
+2026-02-17 14:38:21.082 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1389.30 Change: +1.41%
+2026-02-17 14:38:21.685 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.61 → partition=0 offset=155
+2026-02-17 14:38:21.685 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.61 Change: +1.14%
+2026-02-17 14:38:22.277 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.1 → partition=1 offset=125
+2026-02-17 14:38:22.277 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.10 Change: +0.56%
+2026-02-17 14:38:23.091 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.5 → partition=0 offset=156
+2026-02-17 14:38:23.091 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.50 Change: +0.11%
+2026-02-17 14:38:23.673 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.3 → partition=1 offset=126
+2026-02-17 14:38:23.674 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.30 Change: -0.38%
+2026-02-17 14:38:24.156 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.7 → partition=2 offset=188
+2026-02-17 14:38:24.156 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.70 Change: +0.68%
+2026-02-17 14:38:24.706 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.8 → partition=2 offset=189
+2026-02-17 14:38:24.707 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.80 Change: -0.98%
+2026-02-17 14:38:25.258 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2235.9 → partition=2 offset=190
+2026-02-17 14:38:25.258 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2235.90 Change: +2.48%
+2026-02-17 14:38:26.715 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:38:27.627 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=157
+2026-02-17 14:38:27.627 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:38:28.132 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=127
+2026-02-17 14:38:28.134 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:38:28.829 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=158
+2026-02-17 14:38:28.830 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:38:29.334 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=191
+2026-02-17 14:38:29.335 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:38:29.902 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=192
+2026-02-17 14:38:29.903 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:38:30.465 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=159
+2026-02-17 14:38:30.465 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:38:30.466 | INFO     | __main__:run_stock_producer:235 - 📊 Stats: Sent=480 Failed=32 Runtime=388s
+2026-02-17 14:38:30.467 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:38:30.467 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:38:30.468 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:38:30]
+2026-02-17 14:38:31.001 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.6 → partition=1 offset=128
+2026-02-17 14:38:31.001 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.60 Change: +0.08%
+2026-02-17 14:38:31.954 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1389.7 → partition=2 offset=193
+2026-02-17 14:38:31.954 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1389.70 Change: +1.44%
+2026-02-17 14:38:32.485 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.71 → partition=0 offset=160
+2026-02-17 14:38:32.486 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.71 Change: +1.18%
+2026-02-17 14:38:33.555 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.8 → partition=1 offset=129
+2026-02-17 14:38:33.555 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.80 Change: +0.60%
+2026-02-17 14:38:34.173 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.45 → partition=0 offset=161
+2026-02-17 14:38:34.173 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.45 Change: +0.10%
+2026-02-17 14:38:34.775 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.4 → partition=1 offset=130
+2026-02-17 14:38:34.775 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.40 Change: -0.37%
+2026-02-17 14:38:35.283 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1217.8 → partition=2 offset=194
+2026-02-17 14:38:35.283 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1217.80 Change: +0.69%
+2026-02-17 14:38:35.775 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1421.9 → partition=2 offset=195
+2026-02-17 14:38:35.775 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1421.90 Change: -0.97%
+2026-02-17 14:38:36.216 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2236.2 → partition=2 offset=196
+2026-02-17 14:38:36.216 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2236.20 Change: +2.50%
+2026-02-17 14:38:37.756 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:38:38.370 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=162
+2026-02-17 14:38:38.370 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:38:38.808 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=131
+2026-02-17 14:38:38.808 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:38:39.379 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=163
+2026-02-17 14:38:39.380 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:38:40.017 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=197
+2026-02-17 14:38:40.017 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:38:40.825 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=198
+2026-02-17 14:38:40.826 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:38:41.442 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=164
+2026-02-17 14:38:41.443 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:38:41.445 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:38:41.445 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:38:41.447 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:38:41]
+2026-02-17 14:38:42.062 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.3 → partition=1 offset=132
+2026-02-17 14:38:42.063 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.30 Change: +0.07%
+2026-02-17 14:38:42.752 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1388.9 → partition=2 offset=199
+2026-02-17 14:38:42.752 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1388.90 Change: +1.38%
+2026-02-17 14:38:43.695 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.69 → partition=0 offset=165
+2026-02-17 14:38:43.695 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.69 Change: +1.17%
+2026-02-17 14:38:44.508 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.5 → partition=1 offset=133
+2026-02-17 14:38:44.508 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.50 Change: +0.58%
+2026-02-17 14:38:45.209 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.55 → partition=0 offset=166
+2026-02-17 14:38:45.210 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.55 Change: +0.11%
+2026-02-17 14:38:46.383 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.3 → partition=1 offset=134
+2026-02-17 14:38:46.384 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.30 Change: -0.38%
+2026-02-17 14:38:47.115 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.0 → partition=2 offset=200
+2026-02-17 14:38:47.115 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.00 Change: +0.70%
+2026-02-17 14:38:47.875 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.1 → partition=2 offset=201
+2026-02-17 14:38:47.876 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.10 Change: -0.95%
+2026-02-17 14:38:48.483 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2235.3 → partition=2 offset=202
+2026-02-17 14:38:48.483 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2235.30 Change: +2.46%
+2026-02-17 14:38:49.777 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:38:50.452 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=167
+2026-02-17 14:38:50.453 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:38:51.067 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=135
+2026-02-17 14:38:51.067 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:38:51.680 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=168
+2026-02-17 14:38:51.681 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:38:52.305 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=203
+2026-02-17 14:38:52.305 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:38:52.871 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=204
+2026-02-17 14:38:52.872 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:38:53.526 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=169
+2026-02-17 14:38:53.526 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:38:53.527 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:38:53.528 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:38:53.528 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:38:53]
+2026-02-17 14:38:54.004 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2715.4 → partition=1 offset=136
+2026-02-17 14:38:54.005 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2715.40 Change: +0.07%
+2026-02-17 14:38:54.456 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1388.9 → partition=2 offset=205
+2026-02-17 14:38:54.457 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1388.90 Change: +1.38%
+2026-02-17 14:38:55.258 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.7 → partition=0 offset=170
+2026-02-17 14:38:55.258 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.70 Change: +1.18%
+2026-02-17 14:38:55.890 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.4 → partition=1 offset=137
+2026-02-17 14:38:55.890 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.40 Change: +0.58%
+2026-02-17 14:38:56.487 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.45 → partition=0 offset=171
+2026-02-17 14:38:56.488 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.45 Change: +0.10%
+2026-02-17 14:38:57.186 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.4 → partition=1 offset=138
+2026-02-17 14:38:57.186 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.40 Change: -0.37%
+2026-02-17 14:38:57.945 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.1 → partition=2 offset=206
+2026-02-17 14:38:57.945 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.10 Change: +0.71%
+2026-02-17 14:38:58.642 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.2 → partition=2 offset=207
+2026-02-17 14:38:58.642 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.20 Change: -0.95%
+2026-02-17 14:38:59.873 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2236.4 → partition=2 offset=208
+2026-02-17 14:38:59.874 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2236.40 Change: +2.51%
+2026-02-17 14:39:01.345 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:39:02.729 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=172
+2026-02-17 14:39:02.729 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:39:03.371 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=139
+2026-02-17 14:39:03.371 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:39:04.171 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=173
+2026-02-17 14:39:04.172 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:39:05.366 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=209
+2026-02-17 14:39:05.366 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:39:06.202 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=210
+2026-02-17 14:39:06.203 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:39:06.830 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=174
+2026-02-17 14:39:06.830 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:39:06.831 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:39:06.832 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:39:06.832 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:39:06]
+2026-02-17 14:39:07.422 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.5 → partition=1 offset=140
+2026-02-17 14:39:07.422 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.50 Change: +0.15%
+2026-02-17 14:39:07.962 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1389.7 → partition=2 offset=211
+2026-02-17 14:39:07.963 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1389.70 Change: +1.44%
+2026-02-17 14:39:08.674 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.85 → partition=0 offset=175
+2026-02-17 14:39:08.675 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.85 Change: +1.25%
+2026-02-17 14:39:09.183 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1522.2 → partition=1 offset=141
+2026-02-17 14:39:09.184 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1522.20 Change: +0.63%
+2026-02-17 14:39:09.892 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.6 → partition=0 offset=176
+2026-02-17 14:39:09.892 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.60 Change: +0.12%
+2026-02-17 14:39:10.499 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.2 → partition=1 offset=142
+2026-02-17 14:39:10.499 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.20 Change: -0.38%
+2026-02-17 14:39:11.118 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.0 → partition=2 offset=212
+2026-02-17 14:39:11.119 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.00 Change: +0.70%
+2026-02-17 14:39:11.766 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.4 → partition=2 offset=213
+2026-02-17 14:39:11.766 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.40 Change: -0.93%
+2026-02-17 14:39:12.547 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2237.5 → partition=2 offset=214
+2026-02-17 14:39:12.548 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2237.50 Change: +2.56%
+2026-02-17 14:39:13.942 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:39:14.898 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=177
+2026-02-17 14:39:14.898 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:39:15.485 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=143
+2026-02-17 14:39:15.485 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:39:16.172 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=178
+2026-02-17 14:39:16.173 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:39:17.649 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=215
+2026-02-17 14:39:17.650 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:39:18.305 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=216
+2026-02-17 14:39:18.305 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:39:19.270 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=179
+2026-02-17 14:39:19.271 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:39:19.271 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:39:19.272 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:39:19.272 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:39:19]
+2026-02-17 14:39:20.047 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.8 → partition=1 offset=144
+2026-02-17 14:39:20.047 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.80 Change: +0.16%
+2026-02-17 14:39:21.077 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1390.0 → partition=2 offset=217
+2026-02-17 14:39:21.077 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1390.00 Change: +1.46%
+2026-02-17 14:39:21.675 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.81 → partition=0 offset=180
+2026-02-17 14:39:21.675 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.81 Change: +1.23%
+2026-02-17 14:39:22.485 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1523.0 → partition=1 offset=145
+2026-02-17 14:39:22.486 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1523.00 Change: +0.68%
+2026-02-17 14:39:23.099 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.7 → partition=0 offset=181
+2026-02-17 14:39:23.100 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.70 Change: +0.13%
+2026-02-17 14:39:23.594 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.8 → partition=1 offset=146
+2026-02-17 14:39:23.594 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.80 Change: -0.34%
+2026-02-17 14:39:24.229 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.2 → partition=2 offset=218
+2026-02-17 14:39:24.230 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.20 Change: +0.72%
+2026-02-17 14:39:24.844 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.8 → partition=2 offset=219
+2026-02-17 14:39:24.844 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.80 Change: -0.91%
+2026-02-17 14:39:25.578 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2237.7 → partition=2 offset=220
+2026-02-17 14:39:25.578 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2237.70 Change: +2.57%
+2026-02-17 14:39:26.948 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:39:27.708 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=182
+2026-02-17 14:39:27.709 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:39:28.733 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=147
+2026-02-17 14:39:28.735 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:39:29.653 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=183
+2026-02-17 14:39:29.654 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:39:30.147 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=221
+2026-02-17 14:39:30.147 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:39:30.673 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=222
+2026-02-17 14:39:30.673 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:39:31.304 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=184
+2026-02-17 14:39:31.304 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:39:31.305 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:39:31.306 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:39:31.307 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:39:31]
+2026-02-17 14:39:31.909 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2716.8 → partition=1 offset=148
+2026-02-17 14:39:31.910 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2716.80 Change: +0.12%
+2026-02-17 14:39:32.428 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1390.0 → partition=2 offset=223
+2026-02-17 14:39:32.428 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1390.00 Change: +1.46%
+2026-02-17 14:39:32.930 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.85 → partition=0 offset=185
+2026-02-17 14:39:32.930 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.85 Change: +1.25%
+2026-02-17 14:39:33.550 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1521.9 → partition=1 offset=149
+2026-02-17 14:39:33.551 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1521.90 Change: +0.61%
+2026-02-17 14:39:34.358 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.5 → partition=0 offset=186
+2026-02-17 14:39:34.358 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.50 Change: +0.11%
+2026-02-17 14:39:35.090 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.4 → partition=1 offset=150
+2026-02-17 14:39:35.091 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.40 Change: -0.37%
+2026-02-17 14:39:35.994 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.3 → partition=2 offset=224
+2026-02-17 14:39:35.994 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.30 Change: +0.73%
+2026-02-17 14:39:36.620 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.8 → partition=2 offset=225
+2026-02-17 14:39:36.620 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.80 Change: -0.91%
+2026-02-17 14:39:37.846 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2237.4 → partition=2 offset=226
+2026-02-17 14:39:37.846 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2237.40 Change: +2.55%
+2026-02-17 14:39:39.439 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:39:40.215 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=187
+2026-02-17 14:39:40.215 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:39:40.923 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=151
+2026-02-17 14:39:40.923 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:39:42.035 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=188
+2026-02-17 14:39:42.035 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:39:43.062 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=227
+2026-02-17 14:39:43.063 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:39:43.583 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=228
+2026-02-17 14:39:43.584 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:39:44.087 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=189
+2026-02-17 14:39:44.087 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:39:44.089 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:39:44.089 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:39:44.090 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:39:44]
+2026-02-17 14:39:44.800 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.6 → partition=1 offset=152
+2026-02-17 14:39:44.800 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.60 Change: +0.15%
+2026-02-17 14:39:45.314 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1390.0 → partition=2 offset=229
+2026-02-17 14:39:45.315 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1390.00 Change: +1.46%
+2026-02-17 14:39:45.927 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.85 → partition=0 offset=190
+2026-02-17 14:39:45.927 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.85 Change: +1.25%
+2026-02-17 14:39:46.773 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1522.4 → partition=1 offset=153
+2026-02-17 14:39:46.774 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1522.40 Change: +0.64%
+2026-02-17 14:39:47.264 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.6 → partition=0 offset=191
+2026-02-17 14:39:47.264 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.60 Change: +0.12%
+2026-02-17 14:39:47.769 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.5 → partition=1 offset=154
+2026-02-17 14:39:47.769 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.50 Change: -0.36%
+2026-02-17 14:39:48.492 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.5 → partition=2 offset=230
+2026-02-17 14:39:48.492 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.50 Change: +0.74%
+2026-02-17 14:39:49.242 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1423.0 → partition=2 offset=231
+2026-02-17 14:39:49.243 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1423.00 Change: -0.89%
+2026-02-17 14:39:49.928 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2239.1 → partition=2 offset=232
+2026-02-17 14:39:49.928 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2239.10 Change: +2.63%
+2026-02-17 14:39:51.115 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:39:51.776 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=192
+2026-02-17 14:39:51.776 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:39:52.387 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=155
+2026-02-17 14:39:52.388 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:39:53.006 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=193
+2026-02-17 14:39:53.006 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:39:53.622 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=233
+2026-02-17 14:39:53.623 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:39:54.229 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=234
+2026-02-17 14:39:54.229 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:39:54.832 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=194
+2026-02-17 14:39:54.833 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:39:54.834 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:39:54.834 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:39:54.835 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:39:54]
+2026-02-17 14:39:55.472 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2718.0 → partition=1 offset=156
+2026-02-17 14:39:55.472 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2718.00 Change: +0.17%
+2026-02-17 14:39:56.069 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1390.0 → partition=2 offset=235
+2026-02-17 14:39:56.069 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1390.00 Change: +1.46%
+2026-02-17 14:39:56.782 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.85 → partition=0 offset=195
+2026-02-17 14:39:56.782 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.85 Change: +1.25%
+2026-02-17 14:39:57.320 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1522.8 → partition=1 offset=157
+2026-02-17 14:39:57.320 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1522.80 Change: +0.67%
+2026-02-17 14:39:57.801 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.7 → partition=0 offset=196
+2026-02-17 14:39:57.801 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.70 Change: +0.13%
+2026-02-17 14:39:58.330 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.5 → partition=1 offset=158
+2026-02-17 14:39:58.330 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.50 Change: -0.36%
+2026-02-17 14:39:58.940 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.4 → partition=2 offset=236
+2026-02-17 14:39:58.941 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.40 Change: +0.74%
+2026-02-17 14:40:00.263 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1423.1 → partition=2 offset=237
+2026-02-17 14:40:00.263 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1423.10 Change: -0.88%
+2026-02-17 14:40:00.865 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2239.9 → partition=2 offset=238
+2026-02-17 14:40:00.866 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2239.90 Change: +2.67%
+2026-02-17 14:40:05.039 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:40:05.836 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=197
+2026-02-17 14:40:05.836 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:40:06.473 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=159
+2026-02-17 14:40:06.473 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:40:07.332 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=198
+2026-02-17 14:40:07.332 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:40:07.950 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=239
+2026-02-17 14:40:07.951 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:40:08.562 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=240
+2026-02-17 14:40:08.563 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:40:09.396 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=199
+2026-02-17 14:40:09.396 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:40:09.397 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:40:09.398 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:40:09.398 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:40:09]
+2026-02-17 14:40:10.193 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2717.1 → partition=1 offset=160
+2026-02-17 14:40:10.193 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2717.10 Change: +0.13%
+2026-02-17 14:40:10.816 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1391.5 → partition=2 offset=241
+2026-02-17 14:40:10.816 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1391.50 Change: +1.57%
+2026-02-17 14:40:11.846 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.9 → partition=0 offset=200
+2026-02-17 14:40:11.847 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.90 Change: +1.27%
+2026-02-17 14:40:12.355 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1522.9 → partition=1 offset=161
+2026-02-17 14:40:12.355 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1522.90 Change: +0.67%
+2026-02-17 14:40:12.944 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.5 → partition=0 offset=201
+2026-02-17 14:40:12.945 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.50 Change: +0.11%
+2026-02-17 14:40:13.586 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.2 → partition=1 offset=162
+2026-02-17 14:40:13.586 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.20 Change: -0.38%
+2026-02-17 14:40:14.802 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.2 → partition=2 offset=242
+2026-02-17 14:40:14.802 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.20 Change: +0.72%
+2026-02-17 14:40:16.038 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1422.9 → partition=2 offset=243
+2026-02-17 14:40:16.038 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1422.90 Change: -0.90%
+2026-02-17 14:40:16.539 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2239.0 → partition=2 offset=244
+2026-02-17 14:40:16.539 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2239.00 Change: +2.63%
+2026-02-17 14:40:18.919 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:40:19.813 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=202
+2026-02-17 14:40:19.814 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:40:20.331 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=163
+2026-02-17 14:40:20.332 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:40:21.059 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=203
+2026-02-17 14:40:21.059 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:40:21.872 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=245
+2026-02-17 14:40:21.873 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:40:22.482 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=246
+2026-02-17 14:40:22.482 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:40:23.326 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=204
+2026-02-17 14:40:23.327 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:40:23.328 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:40:23.329 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:40:23.329 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:40:23]
+2026-02-17 14:40:23.909 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2719.9 → partition=1 offset=164
+2026-02-17 14:40:23.910 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2719.90 Change: +0.24%
+2026-02-17 14:40:24.521 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1393.7 → partition=2 offset=247
+2026-02-17 14:40:24.522 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1393.70 Change: +1.73%
+2026-02-17 14:40:25.163 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.95 → partition=0 offset=205
+2026-02-17 14:40:25.164 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.95 Change: +1.29%
+2026-02-17 14:40:25.817 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1523.9 → partition=1 offset=165
+2026-02-17 14:40:25.817 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1523.90 Change: +0.74%
+2026-02-17 14:40:26.601 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.5 → partition=0 offset=206
+2026-02-17 14:40:26.601 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.50 Change: +0.11%
+2026-02-17 14:40:27.267 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.3 → partition=1 offset=166
+2026-02-17 14:40:27.267 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.30 Change: -0.38%
+2026-02-17 14:40:28.556 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.5 → partition=2 offset=248
+2026-02-17 14:40:28.556 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.50 Change: +0.74%
+2026-02-17 14:40:29.385 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1423.0 → partition=2 offset=249
+2026-02-17 14:40:29.385 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1423.00 Change: -0.89%
+2026-02-17 14:40:29.948 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2239.1 → partition=2 offset=250
+2026-02-17 14:40:29.948 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2239.10 Change: +2.63%
+2026-02-17 14:40:31.566 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:40:32.138 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=207
+2026-02-17 14:40:32.138 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:40:33.087 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=167
+2026-02-17 14:40:33.087 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:40:33.677 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=208
+2026-02-17 14:40:33.677 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:40:34.203 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=251
+2026-02-17 14:40:34.203 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:40:35.044 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=252
+2026-02-17 14:40:35.045 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:40:35.954 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=209
+2026-02-17 14:40:35.955 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:40:35.958 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:40:35.959 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:40:35.960 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:40:35]
+2026-02-17 14:40:36.736 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2720.9 → partition=1 offset=168
+2026-02-17 14:40:36.737 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2720.90 Change: +0.27%
+2026-02-17 14:40:37.400 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1395.0 → partition=2 offset=253
+2026-02-17 14:40:37.400 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1395.00 Change: +1.82%
+2026-02-17 14:40:38.492 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=215.99 → partition=0 offset=210
+2026-02-17 14:40:38.493 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     215.99 Change: +1.31%
+2026-02-17 14:40:39.088 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1524.0 → partition=1 offset=169
+2026-02-17 14:40:39.089 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1524.00 Change: +0.75%
+2026-02-17 14:40:39.803 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.65 → partition=0 offset=211
+2026-02-17 14:40:39.803 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.65 Change: +0.12%
+2026-02-17 14:40:40.318 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.5 → partition=1 offset=170
+2026-02-17 14:40:40.319 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.50 Change: -0.36%
+2026-02-17 14:40:41.039 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.6 → partition=2 offset=254
+2026-02-17 14:40:41.039 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.60 Change: +0.75%
+2026-02-17 14:40:41.630 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1423.5 → partition=2 offset=255
+2026-02-17 14:40:41.630 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1423.50 Change: -0.86%
+2026-02-17 14:40:42.516 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2239.1 → partition=2 offset=256
+2026-02-17 14:40:42.516 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2239.10 Change: +2.63%
+2026-02-17 14:40:44.067 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'currentTradingPeriod'
+2026-02-17 14:40:44.715 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=212
+2026-02-17 14:40:44.716 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:40:45.178 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=171
+2026-02-17 14:40:45.178 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:40:45.732 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=213
+2026-02-17 14:40:45.732 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:40:46.273 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent NVDA price=182.81 → partition=2 offset=257
+2026-02-17 14:40:46.274 | INFO     | __main__:run_stock_producer:219 - ✅ NVDA            Price: USD     182.81 Change: -0.04%
+2026-02-17 14:40:46.767 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AMZN price=198.79 → partition=2 offset=258
+2026-02-17 14:40:46.767 | INFO     | __main__:run_stock_producer:219 - ✅ AMZN            Price: USD     198.79 Change: -0.09%
+2026-02-17 14:40:47.275 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent META price=639.77 → partition=0 offset=214
+2026-02-17 14:40:47.275 | INFO     | __main__:run_stock_producer:219 - ✅ META            Price: USD     639.77 Change: +0.17%
+2026-02-17 14:40:47.277 | INFO     | __main__:run_stock_producer:244 - 💤 Sleeping 0.0s...
+2026-02-17 14:40:47.277 | INFO     | __main__:run_stock_producer:245 - ────────────────────────────────────────────────────────────
+2026-02-17 14:40:47.278 | INFO     | __main__:run_stock_producer:209 - 🔄 Fetching prices... [14:40:47]
+2026-02-17 14:40:47.780 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TCS.NS price=2721.1 → partition=1 offset=172
+2026-02-17 14:40:47.780 | INFO     | __main__:run_stock_producer:219 - ✅ TCS.NS          Price: INR    2721.10 Change: +0.28%
+2026-02-17 14:40:48.404 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent INFY.NS price=1395.7 → partition=2 offset=259
+2026-02-17 14:40:48.404 | INFO     | __main__:run_stock_producer:219 - ✅ INFY.NS         Price: INR    1395.70 Change: +1.88%
+2026-02-17 14:40:49.112 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent WIPRO.NS price=216.01 → partition=0 offset=215
+2026-02-17 14:40:49.113 | INFO     | __main__:run_stock_producer:219 - ✅ WIPRO.NS        Price: INR     216.01 Change: +1.32%
+2026-02-17 14:40:49.625 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent TECHM.NS price=1523.5 → partition=1 offset=173
+2026-02-17 14:40:49.625 | INFO     | __main__:run_stock_producer:219 - ✅ TECHM.NS        Price: INR    1523.50 Change: +0.71%
+2026-02-17 14:40:50.166 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent HDFCBANK.NS price=926.55 → partition=0 offset=216
+2026-02-17 14:40:50.166 | INFO     | __main__:run_stock_producer:219 - ✅ HDFCBANK.NS     Price: INR     926.55 Change: +0.11%
+2026-02-17 14:40:50.856 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ICICIBANK.NS price=1406.6 → partition=1 offset=174
+2026-02-17 14:40:50.856 | INFO     | __main__:run_stock_producer:219 - ✅ ICICIBANK.NS    Price: INR    1406.60 Change: -0.35%
+2026-02-17 14:40:51.371 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent SBIN.NS price=1218.2 → partition=2 offset=260
+2026-02-17 14:40:51.372 | INFO     | __main__:run_stock_producer:219 - ✅ SBIN.NS         Price: INR    1218.20 Change: +0.72%
+2026-02-17 14:40:51.977 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent RELIANCE.NS price=1423.4 → partition=2 offset=261
+2026-02-17 14:40:51.978 | INFO     | __main__:run_stock_producer:219 - ✅ RELIANCE.NS     Price: INR    1423.40 Change: -0.86%
+2026-02-17 14:40:52.491 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent ADANIENT.NS price=2239.1 → partition=2 offset=262
+2026-02-17 14:40:52.491 | INFO     | __main__:run_stock_producer:219 - ✅ ADANIENT.NS     Price: INR    2239.10 Change: +2.63%
+2026-02-17 14:40:53.378 | ERROR    | __main__:fetch_stock_price:123 - ❌ Error fetching TATAMOTORS.NS: 'NoneType' object is not subscriptable
+2026-02-17 14:40:54.645 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent AAPL price=255.78 → partition=0 offset=217
+2026-02-17 14:40:54.645 | INFO     | __main__:run_stock_producer:219 - ✅ AAPL            Price: USD     255.78 Change: +0.19%
+2026-02-17 14:40:55.370 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent GOOGL price=305.72 → partition=1 offset=175
+2026-02-17 14:40:55.370 | INFO     | __main__:run_stock_producer:219 - ✅ GOOGL           Price: USD     305.72 Change: +0.12%
+2026-02-17 14:40:55.985 | DEBUG    | __main__:send_to_kafka:166 - 📤 Sent MSFT price=401.32 → partition=0 offset=218
+2026-02-17 14:40:55.986 | INFO     | __main__:run_stock_producer:219 - ✅ MSFT            Price: USD     401.32 Change: +0.29%
+2026-02-17 14:40:56.351 | INFO     | __main__:run_stock_producer:249 - ⏹️ Producer stopped by user
+2026-02-17 14:40:56.355 | INFO     | __main__:run_stock_producer:252 - 📊 Final Stats: Sent=657 Failed=44
