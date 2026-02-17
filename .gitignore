@@ -1,0 +1,34 @@
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+
+# Data
+data/
+*.parquet
+*.delta
+
+# ML Models
+ml/models/*.pkl
+ml/models/*.joblib
+
+# Spark
+spark-warehouse/
+derby.log
+metastore_db/
+
+# Delta Lake
+_delta_log/
+
+# Airflow
+airflow/logs/
+
+# IDE
+.vscode/
+.idea/
+
+# Credentials
+*.json
+*credentials*
+*secret*
