@@ -154,6 +154,11 @@ page = st.sidebar.radio(
 st.sidebar.markdown("---")
 st.sidebar.caption(f"Last updated: {datetime.now().strftime('%H:%M:%S')}")
 
+# Add navigation to ML page
+st.sidebar.markdown("---")
+if st.sidebar.button("🤖 ML Predictions"):
+    st.switch_page("pages/ml_predictions.py")
+
 # ================================
 # MAIN APP
 # ================================
