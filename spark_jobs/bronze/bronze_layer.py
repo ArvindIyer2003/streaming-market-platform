@@ -62,8 +62,9 @@ def create_spark_session():
         ) \
         \
         .config("spark.sql.shuffle.partitions", "4") \
-        .config("spark.driver.memory", "4g") \
-        \
+        .config("spark.driver.memory", "1536m") \
+        .config("spark.sql.shuffle.partitions", "2") \
+        .config("spark.default.parallelism", "2") \
         .getOrCreate()
 
     spark.sparkContext.setLogLevel("WARN")
