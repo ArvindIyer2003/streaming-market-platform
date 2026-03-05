@@ -173,7 +173,7 @@ if page == "🏠 Live Overview":
         st.warning("No data available yet. Make sure the pipeline is running!")
     else:
         # Get latest price per symbol
-        latest_prices = trades_df.sort_values('trade_timestamp').groupby('symbol').last().reset_index()
+        latest_prices = trades_df.sort_values('timestamp_parsed').groupby('symbol').last().reset_index()
         
         # Top metrics
         col1, col2, col3, col4 = st.columns(4)
@@ -267,7 +267,7 @@ if page == "🏠 Live Overview":
         
         display_df = latest_prices[[
             'symbol', 'sector', 'price', 'price_change', 'price_change_pct',
-            'day_high', 'day_low', 'volume', 'is_anomaly'
+            'volume', 'volatility', 'is_anomaly'
         ]].sort_values('price_change_pct', ascending=False)
         
         # Color code the dataframe
@@ -439,9 +439,9 @@ elif page == "📊 Analytics":
         st.subheader("Volatility Rankings (24h)")
         
         latest_hourly = hourly_df.sort_values('hour_start').groupby('symbol').last().reset_index()
-        volatility_rank = latest_hourly.nlargest(10, 'price_stddev')[
-            ['symbol', 'sector', 'price_stddev', 'max_change_pct', 'min_change_pct']
-        ]
+        volatility_rank = latest_hourly.nlargest(10, 'price_stddev')[[
+            'symbol', 'sector', 'price_stddev'
+        ]]
         
         fig_vol = px.bar(
             volatility_rank,

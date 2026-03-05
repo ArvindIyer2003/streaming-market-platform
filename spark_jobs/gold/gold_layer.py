@@ -131,12 +131,20 @@ def create_hourly_metrics(df):
             F.sum(F.when(F.col("is_anomaly"), 1).otherwise(0)).alias("anomaly_count")
         ) \
         .select(
-            "symbol",
-            "sector",
-            "exchange",
+            F.col("symbol"),
+            F.col("sector"),
+            F.col("exchange"),
             F.col("window.start").alias("hour_start"),
             F.col("window.end").alias("hour_end"),
-            "*"
+            F.col("hour_open"),
+            F.col("hour_high"),
+            F.col("hour_low"),
+            F.col("hour_close"),
+            F.col("hour_avg_price"),
+            F.col("hour_volume"),
+            F.col("tick_count"),
+            F.col("price_stddev"),
+            F.col("anomaly_count")
         ) \
         .drop("window")
 
