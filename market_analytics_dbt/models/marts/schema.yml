@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: fct_daily_performance
+    description: "Daily aggregated stock performance metrics"
+    columns:
+      - name: SYMBOL
+        tests:
+          - not_null
+      - name: TRADE_DATE
+        tests:
+          - not_null
+      - name: DAY_CLOSE
+        description: "Closing price for the day"
+        
+  - name: fct_stock_metrics
+    description: "Rolling 24-hour stock metrics with sentiment"
+    columns:
+      - name: SYMBOL
+        tests:
+          - unique
+          - not_null
+          
+  - name: dim_stocks_enhanced
+    description: "Stock dimension with latest trading info"
+    columns:
+      - name: SYMBOL
+        tests:
+          - unique
+          - not_null

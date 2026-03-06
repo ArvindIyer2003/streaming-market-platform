@@ -1,0 +1,59 @@
+version: 2
+
+sources:
+  - name: raw
+    database: MARKET_ANALYTICS
+    schema: RAW
+    tables:
+      - name: STOCK_TRADES
+        description: "Raw stock trading data from Delta Lake"
+        columns:
+          - name: symbol
+            description: "Stock ticker symbol"
+            tests:
+              - not_null
+          - name: price
+            description: "Current stock price"
+            tests:
+              - not_null
+              
+      - name: OHLC_CANDLES
+        description: "1-minute OHLC candle data"
+        columns:
+          - name: symbol
+            tests:
+              - not_null
+          - name: window_start
+            tests:
+              - not_null
+              
+      - name: STOCK_SENTIMENT
+        description: "Stock prices with news sentiment"
+        
+      - name: DIM_STOCKS
+        description: "Stock dimension table"
+        columns:
+          - name: symbol
+            tests:
+              - unique
+              - not_null
+
+models:
+  - name: stg_stock_trades
+    description: "Cleaned stock trades from raw layer"
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+      - name: price
+        tests:
+          - not_null
+          
+  - name: stg_ohlc_candles
+    description: "Cleaned OHLC candle data"
+    
+  - name: stg_sentiment
+    description: "Cleaned sentiment data with categorization"
+    
+  - name: stg_dim_stocks
+    description: "Active stocks dimension"
